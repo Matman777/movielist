@@ -34,6 +34,12 @@ function NowPlayingMovies() {
         </div>
       ))}
     </div>
+    <footer>
+        <div className="foot">
+        <div>The Movie List</div>
+        <div>© 2024 Matman. Tous droits réservés</div>
+        </div>
+    </footer>
     </div>
   );
 }
