@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { fetchNowPlayingMovies, fetchMovieDetails } from './Api';
 import './Home/Home.css';
+import { Link } from 'react-router-dom';
 
 function NowPlayingMovies() {
   const [movies, setMovies] = useState([]);
@@ -22,12 +23,14 @@ function NowPlayingMovies() {
   return (
     <div className='container'>
       {movies.map((movie) => (
-        <a href={'/Details?id='+movie.id}  key={movie.id} >
-          <h3>{movie.title}</h3>
-          <h4>{movie.release_date}</h4>
-          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-          <p>{movie.overview}</p>
-        </a>
+        <div className="card" key={movie.id}>
+          <h3 className='title'>{movie.title}</h3>
+          <h4 className='date'>Date de sortie: {movie.release_date}</h4>
+          <Link to={`/Details/${movie.id}`}>
+            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+          </Link>
+          <p>Cliquez sur l'image pour plus de détails</p>
+        </div>
       ))}
     </div>
   );
