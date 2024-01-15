@@ -1,5 +1,5 @@
 export async function fetchNowPlayingMovies() {
-    const apiKey = '613c0b885f2080e2f47610c578a49c59';
+    const apiKey = process.env.REACT_APP_API_KEY;
     const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=fr-FR`;
     const response = await fetch(url);
     const data = await response.json();
