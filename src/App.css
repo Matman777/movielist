@@ -144,3 +144,21 @@ ul{
     position: fixed;
     width: 100%;
   }
+
+
+  @media screen and (min-width: 767px) {
+    /* Ajoutez vos styles CSS ici */
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    /* Ajoutez vos styles CSS ici */
+  }
+    
+  @media screen and (min-width: 1024px) {
+    /* Ajoutez vos styles CSS ici */
+  }
+  
+ 
+
+ 
+  
