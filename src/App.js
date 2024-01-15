@@ -1,6 +1,6 @@
 import './App.css';
 import './Home/Home.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import Details from './Details/Detail';
 import NowPlayingMovies from './NowPlayingMovies';
 

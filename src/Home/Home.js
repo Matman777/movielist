@@ -3,8 +3,8 @@ import './Home.css';
 function Home(){
     return(
         <div className="title">
-        <h1>Bienvenue!</h1>
-        <h2>Voici quelques films:</h2>
+        <h1>The Movie List</h1>
+        <h2>Voici les dernières sorties:</h2>
         </div>
     );
 }
