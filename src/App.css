@@ -131,3 +131,16 @@ ul{
   .retour-btn:hover {
     background-color: #0056b3;
   }
+
+  .foot{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
