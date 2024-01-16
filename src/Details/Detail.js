@@ -42,7 +42,8 @@ function Details() {
             ))}
           </div>
           <div className='overview'>
-            {movie.overview}
+          {movie.overview ? movie.overview : "Nous sommes désolé, car n'avons trouvé aucun résumé disponible pour ce film. Nous vous recommandons de vous rendre sur votre site de cinéma préféré pour en savoir plus."}
+            
           </div>
           <Link to="/" className="retour-btn">Retour à la liste</Link>
         </div>
