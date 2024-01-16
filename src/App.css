@@ -160,7 +160,10 @@ ul{
       
     }
     .card {
-      width: 45%; 
+      width: 40%;
+      padding: 10px;
+      margin: 5px;
+      
     }
     .detail_container {
       flex-direction: column; 
@@ -174,6 +177,11 @@ ul{
     }
     .img_detail {
       max-width: 100%; 
+    }
+    .foot{
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 2px;
     }
     
   }
